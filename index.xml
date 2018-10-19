@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pavel Emeliyanenko on Pavel Emeliyanenko</title>
+    <link>https://workasm.github.io/</link>
+    <description>Recent content in Pavel Emeliyanenko on Pavel Emeliyanenko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Pavel Emeliyanenko</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Exact symbolic–numeric computation of planar algebraic curves</title>
+      <link>https://workasm.github.io/publication/2013-tcs/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2013-tcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harnessing the power of GPUs for problems in real algebraic geometry</title>
+      <link>https://workasm.github.io/publication/2012-phd/</link>
+      <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2012-phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing resultants on Graphics Processing Units: Towards GPU-accelerated computer algebra</title>
+      <link>https://workasm.github.io/publication/2012-jpdc/</link>
+      <pubDate>Mon, 30 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2012-jpdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the complexity of solving a bivariate polynomial system</title>
+      <link>https://workasm.github.io/publication/2012-issac/</link>
+      <pubDate>Sun, 22 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2012-issac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arrangement computation for planar algebraic curves</title>
+      <link>https://workasm.github.io/publication/2011-snc/</link>
+      <pubDate>Tue, 07 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2011-snc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Elimination Method for Solving Bivariate Polynomial Systems: Eliminating the Usual Drawbacks</title>
+      <link>https://workasm.github.io/publication/2011-alenex/</link>
+      <pubDate>Sat, 22 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2011-alenex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A complete modular resultant algorithm targeted for realization on graphics hardware</title>
+      <link>https://workasm.github.io/publication/2010-pasco/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2010-pasco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modular resultant algorithm for graphics processors</title>
+      <link>https://workasm.github.io/publication/2010-ica3pp/</link>
+      <pubDate>Fri, 21 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2010-ica3pp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accelerating symbolic computations on NVIDIA Fermi</title>
+      <link>https://workasm.github.io/publication/2010-gtc/</link>
+      <pubDate>Thu, 25 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2010-gtc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient multiplication of polynomials on graphics hardware</title>
+      <link>https://workasm.github.io/publication/2009-appt/</link>
+      <pubDate>Mon, 30 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2009-appt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing Arcs of Implicit Algebraic Curves, Exactly and Fast</title>
+      <link>https://workasm.github.io/publication/2009-isvc/</link>
+      <pubDate>Mon, 30 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2009-isvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing and exploring planar algebraic arrangements: a web application</title>
+      <link>https://workasm.github.io/publication/2008-webapp/</link>
+      <pubDate>Mon, 09 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2008-webapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CGAL&#39;s Curved Kernel via Analysis</title>
+      <link>https://workasm.github.io/publication/2008-cgal_ckva/</link>
+      <pubDate>Fri, 30 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2008-cgal_ckva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An implementation for the 2D Algebraic Kernel</title>
+      <link>https://workasm.github.io/publication/2008-cgal_akd/</link>
+      <pubDate>Thu, 01 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2008-cgal_akd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization of Points and Segments of Real Algebraic Plane Curves</title>
+      <link>https://workasm.github.io/publication/2007-msc/</link>
+      <pubDate>Tue, 13 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2007-msc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
