@@ -1,0 +1,3 @@
+[submodule "html_src"]
+	path = html_src
+	url = ../html_src.git
