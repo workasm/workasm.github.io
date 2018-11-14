@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &#39;combine&#39; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.">
+  <meta name="description" content="Chapter 6 and 7: explicit parallelization in MATLAB using MathWorks Toolboxes and other thirdparty libraries. In these chapters we make a detailed overview of Parallel Computing Toolbox, Distributed Computing Server and MATLAB-integrated Jacket GPU library by AccelerEyes. Besides that, we discuss MATLAB&#39;s parallelization through MEX interfacing such parallel processing libraries as AccelerEyes ArrayFire, NVIDIA CUDA, GPUmat, OpenMP and POSIX threads. The efficiency of parallelization techniques are evaluated on a concrete running example: the Matched Filter algorithm. This is a computationally expensive algorithm which admits a large degree of parallelism yet not straightforwardly achievable.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/publication/2010-pasco/">
+  <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/publication/2015-matlab/">
 
   
 
@@ -96,26 +96,26 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://workasm.github.io/publication/2010-pasco/">
+  <link rel="canonical" href="https://workasm.github.io/publication/2015-matlab/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Pavel Emeliyanenko">
-  <meta property="og:url" content="https://workasm.github.io/publication/2010-pasco/">
-  <meta property="og:title" content="A complete modular resultant algorithm targeted for realization on graphics hardware | Pavel Emeliyanenko">
-  <meta property="og:description" content="This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &#39;combine&#39; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.">
+  <meta property="og:url" content="https://workasm.github.io/publication/2015-matlab/">
+  <meta property="og:title" content="Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization) | Pavel Emeliyanenko">
+  <meta property="og:description" content="Chapter 6 and 7: explicit parallelization in MATLAB using MathWorks Toolboxes and other thirdparty libraries. In these chapters we make a detailed overview of Parallel Computing Toolbox, Distributed Computing Server and MATLAB-integrated Jacket GPU library by AccelerEyes. Besides that, we discuss MATLAB&#39;s parallelization through MEX interfacing such parallel processing libraries as AccelerEyes ArrayFire, NVIDIA CUDA, GPUmat, OpenMP and POSIX threads. The efficiency of parallelization techniques are evaluated on a concrete running example: the Matched Filter algorithm. This is a computationally expensive algorithm which admits a large degree of parallelism yet not straightforwardly achievable.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2010-07-21T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2015-06-07T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-10-19T18:38:08&#43;02:00">
-  
-
+  <meta property="article:modified_time" content="2015-06-07T00:00:00&#43;00:00">
   
 
   
 
-  <title>A complete modular resultant algorithm targeted for realization on graphics hardware | Pavel Emeliyanenko</title>
+  
+
+  <title>Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization) | Pavel Emeliyanenko</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -216,10 +216,10 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">A complete modular resultant algorithm targeted for realization on graphics hardware</h1>
+    <h1 itemprop="name">Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization)</h1>
     <span class="pub-authors" itemprop="author">
       
-      Pavel Emeliyanenko
+      Yair Altman
       
     </span>
     <span class="pull-right">
@@ -228,35 +228,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware&amp;url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f"
+         href="https://twitter.com/intent/tweet?text=Accelerating%20MATLAB%20Performance%3a%201001%20tips%20to%20speed%20up%20MATLAB%20programs%20%28Chapters%206%20and%207%3a%20explicit%20parallelization%29&amp;url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2015-matlab%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fworkasm.github.io%2fpublication%2f2015-matlab%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f&amp;title=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2015-matlab%2f&amp;title=Accelerating%20MATLAB%20Performance%3a%201001%20tips%20to%20speed%20up%20MATLAB%20programs%20%28Chapters%206%20and%207%3a%20explicit%20parallelization%29"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f&amp;title=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2015-matlab%2f&amp;title=Accelerating%20MATLAB%20Performance%3a%201001%20tips%20to%20speed%20up%20MATLAB%20programs%20%28Chapters%206%20and%207%3a%20explicit%20parallelization%29"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware&amp;body=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f">
+         href="mailto:?subject=Accelerating%20MATLAB%20Performance%3a%201001%20tips%20to%20speed%20up%20MATLAB%20programs%20%28Chapters%206%20and%207%3a%20explicit%20parallelization%29&amp;body=https%3a%2f%2fworkasm.github.io%2fpublication%2f2015-matlab%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -270,7 +270,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &lsquo;combine&rsquo; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.</p>
+    <p class="pub-abstract" itemprop="text">Chapter 6 and 7: explicit parallelization in MATLAB using MathWorks Toolboxes and other thirdparty libraries. In these chapters we make a detailed overview of Parallel Computing Toolbox, Distributed Computing Server and MATLAB-integrated Jacket GPU library by AccelerEyes. Besides that, we discuss MATLAB&rsquo;s parallelization through MEX interfacing such parallel processing libraries as AccelerEyes ArrayFire, NVIDIA CUDA, GPUmat, OpenMP and POSIX threads. The efficiency of parallelization techniques are evaluated on a concrete running example: the Matched Filter algorithm. This is a computationally expensive algorithm which admits a large degree of parallelism yet not straightforwardly achievable.</p>
     
 
     
@@ -281,8 +281,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="https://workasm.github.io/publication/#1">
-              Conference paper
+            <a href="https://workasm.github.io/publication/#6">
+              Book section
             </a>
             
           </div>
@@ -299,7 +299,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">In PASCO</div>
+          <div class="col-xs-12 col-sm-9">CRC Press</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -313,7 +313,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            July, 2010
+            June, 2015
           </div>
         </div>
       </div>
@@ -333,9 +333,6 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://workasm.github.io/pdf/pasco_2010.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
@@ -349,9 +346,8 @@
 
 
 
-
-<a class="btn btn-primary btn-outline" href="https://dl.acm.org/citation.cfm?id=1837219" target="_blank" rel="noopener">
-  View Conference Article
+<a class="btn btn-primary btn-outline" href="https://www.amazon.com/Accelerating-MATLAB-Performance-speed-programs/dp/1482211297" target="_blank" rel="noopener">
+  View Book on Amazon
 </a>
 
 
