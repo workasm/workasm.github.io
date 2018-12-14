@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Pavel Emeliyanenko</copyright>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://workasm.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CGAL&#39;s Polynomial Parser</title>
+      <link>https://workasm.github.io/project/poly_parser/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://workasm.github.io/project/poly_parser/</guid>
+      <description>Here is the multivariate polynomial parser developed as part of CGAL library (namely its Polynomial package). Note that, despite its well-thought generic and flexible design, Polynomial&amp;rsquo;s package integrated parser (aka. input operator &amp;gt;&amp;gt;) is quite rudimental and supports only polynomials given in ASCII machine-readable format, e.g.:
+P[8(0,P[8(0,P[8(0,2)(2,-16)(4,80)(6,-128)(8,64)])(2,P[0(0,-16)])(4,P[0(0,80)])(6,P[0(0,-128)])(8,P[0(0,64)])])(2,P[0(0,P[0(0,-16)])])(4,P[0(0,P[0(0,80)])])(6,P[0(0,P[0(0,-128)])])(8,P[0(0,P[0(0,64)])])]
+Our parser, in contrast, can parse arbitrary polynomial expressions in any number of variables with arbitrary coefficient types, e.g., trivariate polynomial expression with large rational coefficients: $$((723647287346823/817239817928378127381273y-1)^4 - x*y^3)^5 + (x + z)^2 - (2123234523*x^2 - 2*y*y*x + 3^{100}*x*132123)^{13}$$</description>
+    </item>
     
   </channel>
 </rss>

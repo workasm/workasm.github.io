@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &#39;combine&#39; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.">
+  <meta name="description" content="Multivariate polynomial parser for CGAL library">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/publication/2010-pasco/">
+  <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/project/poly_parser/">
 
   
 
@@ -106,33 +106,32 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://workasm.github.io/publication/2010-pasco/">
+  <link rel="canonical" href="https://workasm.github.io/project/poly_parser/">
 
   
   
   
   
     
-    
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Pavel Emeliyanenko">
-  <meta property="og:url" content="https://workasm.github.io/publication/2010-pasco/">
-  <meta property="og:title" content="A complete modular resultant algorithm targeted for realization on graphics hardware | Pavel Emeliyanenko">
-  <meta property="og:description" content="This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &#39;combine&#39; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13."><meta property="og:image" content="https://workasm.github.io/img/portrait.jpg">
+  <meta property="og:url" content="https://workasm.github.io/project/poly_parser/">
+  <meta property="og:title" content="CGAL&#39;s Polynomial Parser | Pavel Emeliyanenko">
+  <meta property="og:description" content="Multivariate polynomial parser for CGAL library"><meta property="og:image" content="https://workasm.github.io/img/cgal_logo.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2010-07-21T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2016-04-27T00:00:00&#43;02:00">
   
-  <meta property="article:modified_time" content="2018-10-19T18:38:08&#43;02:00">
-  
-
+  <meta property="article:modified_time" content="2018-12-13T18:31:40&#43;01:00">
   
 
   
 
-  <title>A complete modular resultant algorithm targeted for realization on graphics hardware | Pavel Emeliyanenko</title>
+  
+
+  <title>CGAL&#39;s Polynomial Parser | Pavel Emeliyanenko</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -260,7 +259,8 @@
   </div>
 </nav>
 
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -271,6 +271,15 @@
 
 
 
+
+<div class="article-header">
+  
+  
+  <img src="/img/cgal_logo.png" itemprop="image" alt="">
+  
+
+  
+</div>
 
 
 
@@ -281,7 +290,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">A complete modular resultant algorithm targeted for realization on graphics hardware</h1>
+  <h1 itemprop="name">CGAL&#39;s Polynomial Parser</h1>
 
   
 
@@ -292,22 +301,18 @@
 
   
   
-  
-  <div>
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Pavel Emeliyanenko</span>
-    </span>
-    
-  </div>
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Pavel Emeliyanenko">
+  </span>
   
 
   <span class="article-date">
     
         Last updated on
     
-    <meta content="2010-07-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-10-19 18:38:08 &#43;0200 CEST" itemprop="dateModified">
-      Oct 19, 2018
+    <meta content="2016-04-27 00:00:00 &#43;0200 CEST" itemprop="datePublished">
+    <time datetime="2018-12-13 18:31:40 &#43;0100 CET" itemprop="dateModified">
+      Dec 13, 2018
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -319,7 +324,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/publication/2010-pasco/#disqus_thread"></a>
+  <a href="/project/poly_parser/#disqus_thread"></a>
   
 
   
@@ -330,35 +335,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware&amp;url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f"
+         href="https://twitter.com/intent/tweet?text=CGAL%27s%20Polynomial%20Parser&amp;url=https%3a%2f%2fworkasm.github.io%2fproject%2fpoly_parser%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fworkasm.github.io%2fproject%2fpoly_parser%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f&amp;title=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fworkasm.github.io%2fproject%2fpoly_parser%2f&amp;title=CGAL%27s%20Polynomial%20Parser"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f&amp;title=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fworkasm.github.io%2fproject%2fpoly_parser%2f&amp;title=CGAL%27s%20Polynomial%20Parser"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=A%20complete%20modular%20resultant%20algorithm%20targeted%20for%20realization%20on%20graphics%20hardware&amp;body=https%3a%2f%2fworkasm.github.io%2fpublication%2f2010-pasco%2f">
+         href="mailto:?subject=CGAL%27s%20Polynomial%20Parser&amp;body=https%3a%2f%2fworkasm.github.io%2fproject%2fpoly_parser%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -378,6 +383,8 @@
 
 
 
+  
+
 
 
 
@@ -396,18 +403,6 @@
 
 
   
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="/pdf/pasco_2010.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
 
 
 
@@ -420,20 +415,10 @@
 
 
   
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://dl.acm.org/citation.cfm?id=1837219" target="_blank" rel="noopener">
-    
-    View Conference Article
-  </a>
+
+
+
+
 
 
 </div>
@@ -446,70 +431,34 @@
 
   <div class="article-container">
 
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &lsquo;combine&rsquo; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.</p>
-    
+    <div class="article-style" itemprop="articleBody">
+      <p>Here is the multivariate polynomial parser developed as part of <a href="https://www.cgal.org/" title="The Computational Geometry Algorithms Library" target="_blank">CGAL</a>
+library (namely its <a href="https://doc.cgal.org/latest/Polynomial/index.html" title="CGAL's Polynomial package" target="_blank">Polynomial</a> package).
+Note that, despite its well-thought generic and flexible design, Polynomial&rsquo;s package integrated parser (aka. input operator &gt;&gt;)
+is quite rudimental and supports only polynomials given in ASCII machine-readable format, e.g.:</p>
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            
-            <a href="/publication/#1">
-              Conference paper
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
+<p><code>P[8(0,P[8(0,P[8(0,2)(2,-16)(4,80)(6,-128)(8,64)])(2,P[0(0,-16)])(4,P[0(0,80)])(6,P[0(0,-128)])(8,P[0(0,64)])])(2,P[0(0,P[0(0,-16)])])(4,P[0(0,P[0(0,80)])])(6,P[0(0,P[0(0,-128)])])(8,P[0(0,P[0(0,64)])])]</code></p>
+
+<p>Our parser, in contrast, can parse arbitrary polynomial expressions in any number of variables with arbitrary coefficient types, e.g., trivariate polynomial expression
+with large rational coefficients:
+$$((723647287346823/817239817928378127381273y-1)^4 - x*y^3)^5 + (x + z)^2 - (2123234523*x^2 - 2*y*y*x + 3^{100}*x*132123)^{13}$$</p>
+
+<p>This parser has been widely adopted internally by several CGAL projects but has never been properly integrated into CGAL
+despite a number of attempts. The reason for this is because CGAL&rsquo;s editors and the author of this code went through countless
+discussions concerning the code structure, clarity, documentation (and what else CGAL is known for) which never came to a fruitful end..
+On this sad note, I took the liberty of publishing the code &ldquo;as is&rdquo; leaving it to the judgement of the reader:
+<a href="https://github.com/workasm/CGAL_Polynomial_parser" title="CGAL::Polynomial_parser_d on GitHub" target="_blank">Polynomial parser on GitHub</a>.</p>
+
+<p>#<script type="application/javascript" src="//gist.github.com/workasm/CGAL_Polynomial_parser.js"></script>
+Here is also short inroduction to the parser: <a href="/pdf/poly_parser_2012.pdf" target="_blank">Parser Manual</a>.</p>
+
     </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In PASCO</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9" itemprop="datePublished">
-            July, 2010
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-sm-none space-below"></div>
-
-    <div class="space-below"></div>
-
-    <div class="article-style"></div>
 
     
 
     
 
 
-
-  
 
 
 
@@ -580,8 +529,26 @@
 
 
 
+    
+    
+
+    
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    
+
   </div>
-</div>
+</article>
 
 
 

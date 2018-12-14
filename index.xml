@@ -11,6 +11,34 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>CGAL&#39;s Polynomial Parser</title>
+      <link>https://workasm.github.io/project/poly_parser/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://workasm.github.io/project/poly_parser/</guid>
+      <description>&lt;p&gt;Here is the multivariate polynomial parser developed as part of &lt;a href=&#34;https://www.cgal.org/&#34; title=&#34;The Computational Geometry Algorithms Library&#34; target=&#34;_blank&#34;&gt;CGAL&lt;/a&gt;
+library (namely its &lt;a href=&#34;https://doc.cgal.org/latest/Polynomial/index.html&#34; title=&#34;CGAL&#39;s Polynomial package&#34; target=&#34;_blank&#34;&gt;Polynomial&lt;/a&gt; package).
+Note that, despite its well-thought generic and flexible design, Polynomial&amp;rsquo;s package integrated parser (aka. input operator &amp;gt;&amp;gt;)
+is quite rudimental and supports only polynomials given in ASCII machine-readable format, e.g.:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;P[8(0,P[8(0,P[8(0,2)(2,-16)(4,80)(6,-128)(8,64)])(2,P[0(0,-16)])(4,P[0(0,80)])(6,P[0(0,-128)])(8,P[0(0,64)])])(2,P[0(0,P[0(0,-16)])])(4,P[0(0,P[0(0,80)])])(6,P[0(0,P[0(0,-128)])])(8,P[0(0,P[0(0,64)])])]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Our parser, in contrast, can parse arbitrary polynomial expressions in any number of variables with arbitrary coefficient types, e.g., trivariate polynomial expression
+with large rational coefficients:
+$$((723647287346823/817239817928378127381273y-1)^4 - x*y^3)^5 + (x + z)^2 - (2123234523*x^2 - 2*y*y*x + 3^{100}*x*132123)^{13}$$&lt;/p&gt;
+
+&lt;p&gt;This parser has been widely adopted internally by several CGAL projects but has never been properly integrated into CGAL
+despite a number of attempts. The reason for this is because CGAL&amp;rsquo;s editors and the author of this code went through countless
+discussions concerning the code structure, clarity, documentation (and what else CGAL is known for) which never came to a fruitful end..
+On this sad note, I took the liberty of publishing the code &amp;ldquo;as is&amp;rdquo; leaving it to the judgement of the reader:
+&lt;a href=&#34;https://github.com/workasm/CGAL_Polynomial_parser&#34; title=&#34;CGAL::Polynomial_parser_d on GitHub&#34; target=&#34;_blank&#34;&gt;Polynomial parser on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;#&lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/workasm/CGAL_Polynomial_parser.js&#34;&gt;&lt;/script&gt;
+Here is also short inroduction to the parser: &lt;a href=&#34;https://workasm.github.io/pdf/poly_parser_2012.pdf&#34; target=&#34;_blank&#34;&gt;Parser Manual&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization)</title>
       <link>https://workasm.github.io/publication/2015-matlab/</link>
       <pubDate>Sun, 07 Jun 2015 00:00:00 +0000</pubDate>
@@ -133,15 +161,6 @@
       <pubDate>Fri, 30 May 2008 00:00:00 +0000</pubDate>
       
       <guid>https://workasm.github.io/publication/2008-cgal_ckva/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>An implementation for the 2D Algebraic Kernel</title>
-      <link>https://workasm.github.io/publication/2008-cgal_akd/</link>
-      <pubDate>Thu, 01 May 2008 00:00:00 +0000</pubDate>
-      
-      <guid>https://workasm.github.io/publication/2008-cgal_akd/</guid>
       <description></description>
     </item>
     
