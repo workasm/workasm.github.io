@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alexander Kobel on Pavel Emeliyanenko</title>
+    <link>https://workasm.github.io/authors/alexander-kobel/</link>
+    <description>Recent content in Alexander Kobel on Pavel Emeliyanenko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Pavel Emeliyanenko</copyright>
+    <lastBuildDate>Fri, 07 Jun 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://workasm.github.io/authors/alexander-kobel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exact symbolic–numeric computation of planar algebraic curves</title>
+      <link>https://workasm.github.io/publication/2013-tcs/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2013-tcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arrangement computation for planar algebraic curves</title>
+      <link>https://workasm.github.io/publication/2011-snc/</link>
+      <pubDate>Tue, 07 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2011-snc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

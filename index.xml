@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pavel Emeliyanenko on Pavel Emeliyanenko</title>
     <link>https://workasm.github.io/</link>
     <description>Recent content in Pavel Emeliyanenko on Pavel Emeliyanenko</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Pavel Emeliyanenko</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <copyright>&amp;copy; 2019 Pavel Emeliyanenko</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -35,6 +34,190 @@ On this sad note, I took the liberty of publishing the code &amp;ldquo;as is&amp
 
 &lt;p&gt;#&lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/workasm/CGAL_Polynomial_parser.js&#34;&gt;&lt;/script&gt;
 Here is also short inroduction to the parser: &lt;a href=&#34;https://workasm.github.io/pdf/poly_parser_2012.pdf&#34; target=&#34;_blank&#34;&gt;Parser Manual&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XSurface Dupin Cyclides</title>
+      <link>https://workasm.github.io/project/xsurface/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://workasm.github.io/project/xsurface/</guid>
+      <description>
+
+&lt;p&gt;This project presents a set of curves rendered on the surface of a Dupin Cyclide. It was done together with my colleges from the &lt;a href=&#34;https://www.mpi-inf.mpg.de/departments/algorithms-complexity&#34; target=&#34;_blank&#34;&gt;Max-Planck Institute for Informatics&lt;/a&gt;.
+My part was essentially the rendering of plane algebraic curces (based on my Masters&amp;rsquo;s thesis) and OpenGL rendering of the surfaces. The rendered Dupin Cyclides looked so cool that they were printed in the MPII calendar
+and also became the logo of the Algorithm and Complexity group. See also the &lt;a href=&#34;#publication-list&#34;&gt;publication list&lt;/a&gt; below.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_1.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_1_hud885836181ce0bdbdf0bed98038e1ed2_3573692_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_10.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_10_huce2940fcb9a505ba04d8684edf4eb4b9_3127915_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_11.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_11_huaa3019527f6c0dba3ed2b2d0b5d34811_3222468_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_12.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_12_hu798f88d60387d1bcb5eaaca4adff61a9_3802558_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_13.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_13_hu92e1c604000073c5a4ac533e4ffc920e_3217074_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_14.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_14_hu7c0ec933d3d34635315ea0ace12f96a5_3262861_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_15.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_15_hu325de0a97a530188d663d67ad1bdc7d8_3416456_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_2.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_2_hud885836181ce0bdbdf0bed98038e1ed2_3573692_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_3.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_3_hu7413306b6e0fdcddd55764ee78eff0b5_3496986_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_4.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_4_hudd6421b0a188d2bba237abdb3aa8018e_3093345_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_5.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_5_hu615f8c9e358a29ae821196fb9fd52626_3469742_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_6.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_6_hue193302cf738c0aac39b30cf9384c314_3347776_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_7.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_7_hu5c3f9efa2f770bade3be710b0e76eca9_3354562_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_8.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_8_hu1c8625af3f45a664e8d23931c3fc2ca9_3091221_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-images&#34; href=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_9.png&#34; &gt;
+  &lt;img src=&#34;https://workasm.github.io/project/xsurface/images/dupin_cyclide_9_hu7ed572c27682f4bf08cd8d9b4c773104_3653177_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+
+&lt;h3 id=&#34;publication-list&#34;&gt;Publication list&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A. Eigenwillig, M. Kerber: Exact and efficient 2D-arrangements of arbitrary algebraic curves. In: SODA 2008. &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=1347096&#34; target=&#34;_blank&#34;&gt;ACM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A. Eigenwillig, M. Kerber, N. Wolpert: Fast and exact geometric analysis of real algebraic plane curves. In: ISSAC 2007. &lt;a href=&#34;https://doi.org/10.1145/1277548.1277570&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;K. Mehlhorn, A. Eigenwillig, L. Kettner, W. Krandick, S. Schmitt, N. Wolpert: A Descartes Algorithms for Polynomials with Bit-Stream Coefficients. In: Reliable Implementation of Real Number Algorithms, 2005. &lt;a href=&#34;https://doi.org/10.1007/11555964_12&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;E. Berberich, M. Kerber: Exact arrangements on tori and Dupin cyclides. In: SPM 2008. &lt;a href=&#34;https://doi.org/10.1145/1364901.1364912&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;E. Berberich, M. Kerber, M. Sagraloff: Exact geometric-topological analysis of algebraic surfaces. In: SCG 2008. &lt;a href=&#34;https://doi.org/10.1145/1377676.1377703&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;E. Berberich, M. Sagraloff: A generic and flexible framework for the geometrical and topological analysis of (algebraic) surfaces. In: SMP 2008. &lt;a href=&#34;https://doi.org/10.1145/1364901.1364925&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;E. Berberich: Robust and efficient software for problems in 2.5-dimensional non-linear geometry: algorithms and implementations. PhD Thesis, 2008. &lt;a href=&#34;https://dx.doi.org/10.22028/D291-25937&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;P. Emeliyanenko, E. Berberich, M. Sagraloff: Visualizing Arcs of Implicit Algebraic Curves, Exactly and Fast. In: ISCV 2009. &lt;a href=&#34;https://doi.org/10.1007/978-3-642-10331-5_57&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -152,15 +335,6 @@ Here is also short inroduction to the parser: &lt;a href=&#34;https://workasm.gi
       <pubDate>Mon, 09 Jun 2008 00:00:00 +0000</pubDate>
       
       <guid>https://workasm.github.io/publication/2008-webapp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CGAL&#39;s Curved Kernel via Analysis</title>
-      <link>https://workasm.github.io/publication/2008-cgal_ckva/</link>
-      <pubDate>Fri, 30 May 2008 00:00:00 +0000</pubDate>
-      
-      <guid>https://workasm.github.io/publication/2008-cgal_ckva/</guid>
       <description></description>
     </item>
     

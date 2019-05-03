@@ -5,17 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.2.0">
-  <meta name="generator" content="Hugo 0.52" />
-  <meta name="author" content="Pavel Emeliyanenko">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+  <meta name="generator" content="Hugo 0.55.2" />
+
+  
 
   
   
   
   
+  
+    
+    
     
   
-  <meta name="description" content="My personal and professional webpage">
+  
+
+  <meta name="author" content="Pavel Emeliyanenko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="C&#43;&#43; Software Engineer">
 
   
   <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/publication/">
@@ -71,6 +84,16 @@
 
   <link rel="stylesheet" href="/styles.css">
   
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.66df1ac2dea8a057f880b4fd344da1e7.css">
+  
 
   
   
@@ -113,7 +136,7 @@
   <meta property="og:site_name" content="Pavel Emeliyanenko">
   <meta property="og:url" content="https://workasm.github.io/publication/">
   <meta property="og:title" content="Publications | Pavel Emeliyanenko">
-  <meta property="og:description" content="My personal and professional webpage"><meta property="og:image" content="https://workasm.github.io/img/portrait.jpg">
+  <meta property="og:description" content="C&#43;&#43; Software Engineer"><meta property="og:image" content="https://workasm.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="og:updated_time" content="2018-10-01T00:00:00&#43;02:00">
@@ -142,7 +165,8 @@
 
       <div id="search-box">
         
-        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
 
@@ -175,7 +199,7 @@
 
       
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         
 
         
@@ -236,13 +260,24 @@
         
 
       
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
 
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
         
 
         
 
         
-
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
         
 
       </ul>
@@ -342,39 +377,47 @@
         
       
 
-      <div class="form-row mb-3">
+      <div class="form-row mb-4">
         <div class="col-auto">
-          Filter by type:
+          <input type="search" class="filter-search" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
         </div>
         <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*">All</option>
+            <option value="*">Type</option>
             
-            <option value=".pubtype-0">
-              Uncategorized
-            </option>
+
             
             <option value=".pubtype-1">
+              
               Conference paper
             </option>
             
             <option value=".pubtype-2">
+              
               Journal article
             </option>
             
             <option value=".pubtype-4">
-              Technical report
+              
+              Report
             </option>
             
             <option value=".pubtype-6">
+              
               Book section
+            </option>
+            
+            <option value=".pubtype-7">
+              
+              Thesis
             </option>
             
           </select>
         </div>
         <div class="col-auto">
           <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*">All</option>
+            <option value="*">Date</option>
             
             
             
@@ -428,37 +471,35 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-6 year-2015">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Yair Altman</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2015-matlab/" itemprop="url">Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization)</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    Chapter 6 and 7: explicit parallelization in MATLAB using MathWorks Toolboxes and other thirdparty libraries. In these chapters we make a detailed overview of Parallel Computing Toolbox, Distributed Computing Server and MATLAB-integrated Jacket GPU library by AccelerEyes. Besides that, we discuss MATLAB&rsquo;s parallelization through MEX interfacing such parallel processing libraries as AccelerEyes ArrayFire, NVIDIA CUDA, GPUmat, OpenMP and POSIX threads. The efficiency of parallelization techniques are evaluated on a concrete running example: the Matched Filter algorithm. This is a computationally expensive algorithm which admits a large degree of parallelism yet not straightforwardly achievable.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Yair Altman
-    
-  </div>
+  </span>
+  (2015).
+  <a href="/publication/2015-matlab/" itemprop="name">Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization)</a>.
+  CRC Press.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    CRC Press,
-    
-    2015
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -467,6 +508,7 @@
 
 
   
+
 
 
 
@@ -500,9 +542,10 @@
     View Book on Amazon
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -516,37 +559,56 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2013">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Alexander Kobel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2013-tcs/" itemprop="url">Exact symbolic–numeric computation of planar algebraic curves</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We present a certified and complete algorithm to compute arrangements of real planar algebraic curves. It computes the decomposition of the plane induced by a finite number of algebraic curves in terms of a cylindrical algebraic decomposition. From a high-level perspective, the overall method splits into two main subroutines, namely an algorithm denoted Bisolve to isolate the real solutions of a zero-dimensional bivariate system, and an algorithm denoted GeoTop to compute the topology of a single algebraic curve. Compared to existing approaches based on elimination techniques, we considerably improve the corresponding lifting steps in both subroutines. As a result, generic position of the input system is never assumed, and thus our algorithm never demands for any change of coordinates. In addition, we significantly limit the types of symbolic operations involved, that is, we only use resultant and  computations as purely symbolic operations. The latter results are achieved by combining techniques from different fields such as (modular) symbolic computation, numerical analysis and algebraic geometry. We have implemented our algorithms as prototypical contributions to the C++-project CGAL. We exploit graphics hardware to expedite the remaining symbolic computations. We have also compared our implementation with the current reference implementations, that is, LGP and Maple’s Isolate for polynomial system solving, and CGAL’s bivariate algebraic kernel for analyses and arrangement computations of algebraic curves. For various series of challenging instances, our exhaustive experiments show that the new implementations outperform the existing ones.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Eric Berberich, Pavel Emeliyanenko, Alexander Kobel, Michael Sagraloff
-    
-  </div>
+  </span>
+  (2013).
+  <a href="/publication/2013-tcs/" itemprop="name">Exact symbolic–numeric computation of planar algebraic curves</a>.
+  Theoretical Computer Science.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    Theoretical Computer Science,
-    
-    2013
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -557,6 +619,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/tcs_2013.pdf" target="_blank" rel="noopener">
@@ -591,12 +654,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1016/j.tcs.2013.04.014" target="_blank" rel="noopener">
     
-    View Journal Article
+    Journal Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -608,39 +672,37 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2012">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-7 year-2012">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2012-phd/" itemprop="url">Harnessing the power of GPUs for problems in real algebraic geometry</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    This thesis presents novel parallel algorithms to leverage the power of GPUs (Graphics Processing Units) for exact computations with polynomials having large integer coefficients. The significance of such computations, especially in real algebraic geometry, is hard to undermine. On massively-parallel architectures such as GPU, the degree of datalevel parallelism exposed by an algorithm is the main performance factor. We attain high efficiency through the use of structured matrix theory to assist the realization of relevant operations on polynomials on the graphics hardware. A detailed complexity analysis, assuming the PRAM model, also confirms that our approach achieves a substantially better parallel complexity in comparison to classical algorithms used for symbolic computations. Aside from the theoretical considerations, a large portion of this work is dedicated to the actual algorithm development and optimization techniques where we pay close attention to the specifics of the graphics hardware. As a byproduct of this work, we have developed high-throughput modular arithmetic which we expect to be useful for other GPU applications, in particular, open-key cryptography. We further discuss the algorithms for the solution of a system of polynomial equations, topology computation of algebraic curves and curve visualization which can profit to the full extent from the GPU acceleration. Extensive benchmarking on a real data demonstrates the superiority of our algorithms over several state-of-the-art approaches available to date. This thesis is written in English.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2012).
+  <a href="/publication/2012-phd/" itemprop="name">Harnessing the power of GPUs for problems in real algebraic geometry</a>.
+  PhD thesis.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    PhD thesis,
-    
-    2012
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -651,6 +713,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/phd_thesis_2012.pdf" target="_blank" rel="noopener">
@@ -688,9 +751,10 @@
     University's library
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -704,37 +768,35 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2012">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2012-jpdc/" itemprop="url">Computing resultants on Graphics Processing Units: Towards GPU-accelerated computer algebra</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &lsquo;combine&rsquo; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2012).
+  <a href="/publication/2012-jpdc/" itemprop="name">Computing resultants on Graphics Processing Units: Towards GPU-accelerated computer algebra</a>.
+  JPDC.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    JPDC,
-    
-    2012
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -745,6 +807,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/gpu_res_2012.pdf" target="_blank" rel="noopener">
@@ -779,12 +842,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.sciencedirect.com/science/article/pii/S0743731512001761" target="_blank" rel="noopener">
     
-    View Journal Article
+    Journal Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -798,37 +862,42 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2012">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2012-issac/" itemprop="url">On the complexity of solving a bivariate polynomial system</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We study the complexity of computing the real solutions of a bivariate polynomial system using the recently presented algorithm Bisolve [2]. Bisolve is an elimination method which, in a first step, projects the solutions of a system onto the x- and y-axes and, then, selects the actual solutions from the so induced candidate set. However, unlike similar algorithms, Bisolve requires no genericity assumption on the input, and there is no need for any kind of coordinate transformation. Furthermore, extensive benchmarks as presented in [2] confirm that the algorithm is highly practical, that is, a corresponding C++ implementation in Cgal outperforms state of the art approaches by a large factor. In this paper, we focus on the theoretical complexity of Bisolve. For two polynomials f,g ∈ Z[x,y] of total degree at most n with integer coefficients bounded by 2^τ, we show that Bisolve computes isolating boxes for all real solutions of the system f = g = 0 using O(n^8 + n^7τ) bit operations, thereby improving the previous record bound for the same task by several magnitudes.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko, Michael Sagraloff
-    
-  </div>
+  </span>
+  (2012).
+  <a href="/publication/2012-issac/" itemprop="name">On the complexity of solving a bivariate polynomial system</a>.
+  In ISSAC.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In ISSAC,
-    
-    2012
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -839,6 +908,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/bisolve_complexity.pdf" target="_blank" rel="noopener">
@@ -873,12 +943,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?id=2442854" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -892,37 +963,56 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Alexander Kobel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2011-snc/" itemprop="url">Arrangement computation for planar algebraic curves</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We present a new certified and complete algorithm to compute arrangements of real planar algebraic curves. Our algorithm provides a geometric-topological analysis of the decomposition of the plane induced by a finite number of algebraic curves in terms of a cylindrical algebraic decomposition of the plane. Compared to previous approaches, we improve in two main aspects: Firstly, we significantly limit the types of involved exact operations, that is, our algorithms only use resultant and gcd computations as purely symbolic operations. Secondly, we introduce a new hybrid method in the lifting step of our algorithm which combines the use of a certified numerical complex root solver and information derived from the resultant computation. Additionally, we never consider any coordinate transformation and the output is also given with respect to the initial coordinate system. We implemented our algorithm as a prototypical package of the C++-library CGAL. Our implementation exploits graphics hardware to expedite the resultant and gcd computation. We also compared our implementation with the current reference implementation, that is, CGAL&rsquo;s curve analysis and arrangement for algebraic curves. For various series of challenging instances, our experiments show that the new implementation outperforms the existing one.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Eric Berberich, Pavel Emeliyanenko, Alexander Kobel, Michael Sagraloff
-    
-  </div>
+  </span>
+  (2011).
+  <a href="/publication/2011-snc/" itemprop="name">Arrangement computation for planar algebraic curves</a>.
+  In SNC.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In SNC,
-    
-    2011
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -933,6 +1023,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/snc_2011.pdf" target="_blank" rel="noopener">
@@ -967,12 +1058,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dl.acm.org/citation.cfm?doid=2331684.2331698" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -986,37 +1078,49 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2011-alenex/" itemprop="url">An Elimination Method for Solving Bivariate Polynomial Systems: Eliminating the Usual Drawbacks</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We present an exact and complete algorithm to isolate the real solutions of a zero-dimensional bivariate polynomial system. The proposed algorithm constitutes an elimination method which improves upon existing approaches in a number of points. First, the amount of purely symbolic operations is significantly reduced, that is, only resultant computation and square-free factorization is still needed. Second, our algorithm neither assumes generic position of the input system nor demands for any change of the coordinate system. The latter is due to a novel inclusion predicate to certify that a certain region is isolating for a solution. Our implementation exploits graphics hardware to expedite the resultant computation. Furthermore, we integrate a number of filtering techniques to improve the overall performance. Efficiency of the proposed method is proven by a comparison of our implementation with two state-of-the-art implementations, that is, Lgp and Maple&rsquo;s Isolate. For a series of challenging benchmark instances, experiments show that our implementation outperforms both contestants.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Eric Berberich, Pavel Emeliyanenko, Michael Sagraloff
-    
-  </div>
+  </span>
+  (2011).
+  <a href="/publication/2011-alenex/" itemprop="name">An Elimination Method for Solving Bivariate Polynomial Systems: Eliminating the Usual Drawbacks</a>.
+  In ALENEX.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In ALENEX,
-    
-    2011
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1027,6 +1131,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Bisolve.pdf" target="_blank" rel="noopener">
@@ -1061,12 +1166,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?id=2790252" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1080,37 +1186,35 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2010-pasco/" itemprop="url">A complete modular resultant algorithm targeted for realization on graphics hardware</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    This paper presents a complete modular approach to computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials, the algorithm first maps them to a prime field for sufficiently many primes, and then processes each modular image individually. We evaluate each polynomial at several points and compute a set of univariate resultants for each prime in parallel on the GPU. The remaining &lsquo;combine&rsquo; stage of the algorithm comprising polynomial interpolation and Chinese remaindering is also executed on the graphics processor. The GPU algorithm returns coefficients of the resultant as a set of Mixed Radix (MR) digits. Finally, the large integer coefficients are recovered from the MR representation on the host machine. With the approach of displacement structure [16] and efficient modular arithmetic [8] we have been able to achieve more than 100x speed-up over a CPU-based resultant algorithm from Maple 13.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2010).
+  <a href="/publication/2010-pasco/" itemprop="name">A complete modular resultant algorithm targeted for realization on graphics hardware</a>.
+  In PASCO.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In PASCO,
-    
-    2010
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1121,6 +1225,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/pasco_2010.pdf" target="_blank" rel="noopener">
@@ -1155,12 +1260,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?id=1837219" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1174,37 +1280,35 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2010-ica3pp/" itemprop="url">Modular resultant algorithm for graphics processors</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    In this paper we report on the recent progress in computing bivariate polynomial resultants on Graphics Processing Units (GPU). Given two polynomials in Z[x,y], our algorithm first maps the polynomials to a prime field. Then, each modular image is processed individually. The GPU evaluates the polynomials at a number of points and computes univariate modular resultants in parallel. The remaining “combine” stage of the algorithm is executed sequentially on the host machine. Porting this stage to the graphics hardware is an object of ongoing research. Our algorithm is based on an efficient modular arithmetic from [1]. With the theory of displacement structure we have been able to parallelize the resultant algorithm up to a very fine scale suitable for realization on the GPU. Our benchmarks show a substantial speed-up over a host-based resultant algorithm [2] from CGAL (www.cgal.org).
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2010).
+  <a href="/publication/2010-ica3pp/" itemprop="name">Modular resultant algorithm for graphics processors</a>.
+  In ICA3PP.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In ICA3PP,
-    
-    2010
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1215,6 +1319,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/ica3pp_2010.pdf" target="_blank" rel="noopener">
@@ -1249,12 +1354,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1007/978-3-642-13119-6_37" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1268,37 +1374,35 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2010-gtc/" itemprop="url">Accelerating symbolic computations on NVIDIA Fermi</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We present the first implementation of a modular resultant algorithm on GPUs [4, 5]. With recent developments taking advantage of new NVidia Fermi GPU architecture and instruction set we have been able to achieve about 150x speedup over the CPU-based resultant algorithm from Maple 13.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2010).
+  <a href="/publication/2010-gtc/" itemprop="name">Accelerating symbolic computations on NVIDIA Fermi</a>.
+  In GTC (Poster).
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In GTC (Poster),
-    
-    2010
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1307,6 +1411,7 @@
 
 
   
+
 
 
 
@@ -1345,12 +1450,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://on-demand.gputechconf.com/gtc/2010/posters/A02-%20Accelerating-Symbolic-Computations-on-NVIDIA-Fermi.pdf" target="_blank" rel="noopener">
     
-    View Conference Poster
+    Conference Poster
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1364,37 +1470,49 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2009">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2009-isvc/" itemprop="url">Visualizing Arcs of Implicit Algebraic Curves, Exactly and Fast</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    Given a Cylindrical Algebraic Decomposition [2] of an implicitly defined algebraic curve, visualizing distinct curve arcs is not as easy as it stands because, despite the absence of singularities in the interior, the arcs can pass arbitrary close to each other. We present an algorithm to visualize distinct arcs of algebraic curves efficiently and precise (at a given resolution), irrespective of how close to each other they actually pass. Our hybrid method inherits the ideas of subdivision and curve-tracking methods. With an adaptive mixed-precision model we can render the majority of curves using machine arithmetic without sacrificing the exactness of the final result. The correctness and applicability of our algorithm is borne out by the success of our web-demo presented in [11].
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko, Eric Berberich, Michael Sagraloff
-    
-  </div>
+  </span>
+  (2009).
+  <a href="/publication/2009-isvc/" itemprop="name">Visualizing Arcs of Implicit Algebraic Curves, Exactly and Fast</a>.
+  In ISVC.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In ISVC,
-    
-    2009
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1405,6 +1523,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/isvc_2009.pdf" target="_blank" rel="noopener">
@@ -1447,12 +1566,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1007/978-3-642-10331-5_57" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1466,37 +1586,35 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2009">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2009-appt/" itemprop="url">Efficient multiplication of polynomials on graphics hardware</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We present the algorithm to multiply univariate polynomials with integer coefficients efficiently using the Number Theoretic transform (NTT) on Graphics Processing Units (GPU). The same approach can be used to multiply large integers encoded as polynomials. Our algorithm exploits fused multiply-add capabilities of the graphics hardware. NTT multiplications are executed in parallel for a set of distinct primes followed by reconstruction using the Chinese Remainder theorem (CRT) on the GPU. Our benchmarking experiences show the NTT multiplication performance up to 77 GMul/s. We compared our approach with CPU-based implementations of polynomial and large integer multiplication provided by NTL and GMP libraries.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2009).
+  <a href="/publication/2009-appt/" itemprop="name">Efficient multiplication of polynomials on graphics hardware</a>.
+  In APPT.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In APPT,
-    
-    2009
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1507,6 +1625,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/poly_mul_2009.pdf" target="_blank" rel="noopener">
@@ -1541,12 +1660,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1007/978-3-642-03644-6_11" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1560,37 +1680,42 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2008">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Kerber</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2008-webapp/" itemprop="url">Visualizing and exploring planar algebraic arrangements: a web application</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    A web application is presented to compute, plot, and interactively explore planar arrangements induced by algebraic plane curves of arbitrary degree. It produces accurate curve plots and reflects the exact topology for any arrangement, including degenerated cases. Various user interface features allow the interactive exploration of the arrangement structure. This makes the tool useful for demonstrative and educational purposes, especially as it runs without initial installation process.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko, Michael Kerber
-    
-  </div>
+  </span>
+  (2008).
+  <a href="/publication/2008-webapp/" itemprop="name">Visualizing and exploring planar algebraic arrangements: a web application</a>.
+  In SoCG.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    In SoCG,
-    
-    2008
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1601,6 +1726,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/ek-vaepaa-08.pdf" target="_blank" rel="noopener">
@@ -1647,12 +1773,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1145/1377676.1377714" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1666,37 +1793,42 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2008">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2008-cgal_ckva/" itemprop="url">CGAL&#39;s Curved Kernel via Analysis</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Eric Berberich, Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2008).
+  <a href="/publication/2008-cgal_ckva/" itemprop="name">CGAL&#39;s Curved Kernel via Analysis</a>.
+  Technical Report: ACS-TR-123203-04 (Algorithms for Complex Shapes).
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    Technical Report: ACS-TR-123203-04 (Algorithms for Complex Shapes),
-    
-    2008
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1707,6 +1839,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/CKvA2008.pdf" target="_blank" rel="noopener">
@@ -1736,9 +1869,10 @@
 
 
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1752,37 +1886,42 @@
 
         <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2008">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Kerber</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2008-cgal_akd/" itemprop="url">An implementation for the 2D Algebraic Kernel</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    We report on a model for CGAL’s AlgebraicKernelWithAnalysis_d_2 concept which refines AlgebraicKernel_d_2. Our implementation handles bivariate polynomials in full generality, ie, with no restriction on their degree. Moreover, it allows both integers and nested square-root numbers as coefficient type. The Curve analysis and Curve pair analysis required by the concept are realized using recent work of Eigenwillig, Kerber and Wolpert (’Fast and exact geometric analysis&hellip;’, ISSAC 2007 and’Exact and efficient 2D-Arrangements&hellip;’. SODA 2008). The consequent use of certified numerical methods leads to significant speed-ups without spoiling exactness. We present benchmark results about the performance of several key methods.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko, Michael Kerber
-    
-  </div>
+  </span>
+  (2008).
+  <a href="/publication/2008-cgal_akd/" itemprop="name">An implementation for the 2D Algebraic Kernel</a>.
+  Technical Report: ACS-TR-363602-01 (Algorithms for Complex Shapes).
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    Technical Report: ACS-TR-363602-01 (Algorithms for Complex Shapes),
-    
-    2008
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1793,6 +1932,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/ACS-TR-363602-01.pdf" target="_blank" rel="noopener">
@@ -1822,9 +1962,10 @@
 
 
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1836,39 +1977,37 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2007">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-7 year-2007">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2007-msc/" itemprop="url">Visualization of Points and Segments of Real Algebraic Plane Curves</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    This thesis presents an exact and complete approach for visualization of segments and points of real plane algebraic curves given in implicit form $f(x,y) = 0$. A curve segment is a distinct curve branch consisting of regular points only. Visualization of algebraic curves having self-intersection and isolated points constitutes the main challenge. Visualization of curve segments involves even more difficulties since here we are faced with a problem of discriminating different curve branches, which can pass arbitrary close to each other. Our approach is robust and efficient (as shown by our benchmarks), it combines the advantages both of curve tracking and space subdivision methods and is able to correctly rasterize segments of arbitrary-degree algebraic curves using double, multi-precision or exact rational arithmetic.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2007).
+  <a href="/publication/2007-msc/" itemprop="name">Visualization of Points and Segments of Real Algebraic Plane Curves</a>.
+  Master&rsquo;s thesis.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    Master&rsquo;s thesis,
-    
-    2007
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1879,6 +2018,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/msc_thesis_2007.pdf" target="_blank" rel="noopener">
@@ -1924,9 +2064,10 @@
     MPII library
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -1938,39 +2079,37 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2005">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-7 year-2005">
           
-            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
   
 
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/2005-bsc/" itemprop="url">Automatic verification of conditions for absence of interrupts</a>
-  </h3>
 
-  <div class="pub-abstract" itemprop="text">
-    
-    In order to the have possibility of verifying assembler programs written for the VAMP (Verified Architecture Microprocessor 1) using the abstract software machine we need to relate the VAMP formal specification with the abstract software machine specification. The software machine does not support interrupt handling and therefore programs to be executed on this machine should not produce any interrupts. In the previous work [11] the conditions for absence of interrupts were identified and their validity was proved using the PVS verification system. Besides that, a theorem was established which states that under certain conditions (including the conditions for absence of interrupts) the execution of a program on the software machine is equivalent to the execution of this program on the VAMP.
-    
-  </div>
 
-  <div class="pub-authors" itemprop="author">
-    
-    Pavel Emeliyanenko
-    
-  </div>
+  </span>
+  (2005).
+  <a href="/publication/2005-bsc/" itemprop="name">Automatic verification of conditions for absence of interrupts</a>.
+  Bachelor&rsquo;s thesis.
+  
+  <p>
 
-  <div class="pub-publication">
-    
-    Bachelor&rsquo;s thesis,
-    
-    2005
-  </div>
-
-  <div class="btn-links">
-    
 
 
 
@@ -1981,6 +2120,7 @@
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/bsc_thesis_2005.pdf" target="_blank" rel="noopener">
@@ -2018,9 +2158,10 @@
     University's Website
   </a>
 
+</p>
 
-  </div>
-
+  
+  
 </div>
 
           
@@ -2037,7 +2178,7 @@
   
 
   <p class="powered-by">
-    &copy; 2018 Pavel Emeliyanenko &middot; 
+    &copy; 2019 Pavel Emeliyanenko &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -2092,9 +2233,9 @@
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
       
@@ -2137,24 +2278,42 @@
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
     
-
     
     
     
     
     
+      
     
     
     
-    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
-
     
+    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
 
   </body>
 </html>

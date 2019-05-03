@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Kerber on Pavel Emeliyanenko</title>
+    <link>https://workasm.github.io/authors/michael-kerber/</link>
+    <description>Recent content in Michael Kerber on Pavel Emeliyanenko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Pavel Emeliyanenko</copyright>
+    <lastBuildDate>Mon, 09 Jun 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://workasm.github.io/authors/michael-kerber/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualizing and exploring planar algebraic arrangements: a web application</title>
+      <link>https://workasm.github.io/publication/2008-webapp/</link>
+      <pubDate>Mon, 09 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2008-webapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An implementation for the 2D Algebraic Kernel</title>
+      <link>https://workasm.github.io/publication/2008-cgal_akd/</link>
+      <pubDate>Thu, 01 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://workasm.github.io/publication/2008-cgal_akd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

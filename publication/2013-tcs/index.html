@@ -5,11 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.2.0">
-  <meta name="generator" content="Hugo 0.52" />
-  <meta name="author" content="Pavel Emeliyanenko">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+  <meta name="generator" content="Hugo 0.55.2" />
 
   
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Pavel Emeliyanenko">
+
   
   
   
@@ -60,7 +73,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -77,6 +91,16 @@
   
 
   <link rel="stylesheet" href="/styles.css">
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.66df1ac2dea8a057f880b4fd344da1e7.css">
   
 
   
@@ -120,12 +144,12 @@
   <meta property="og:site_name" content="Pavel Emeliyanenko">
   <meta property="og:url" content="https://workasm.github.io/publication/2013-tcs/">
   <meta property="og:title" content="Exact symbolic–numeric computation of planar algebraic curves | Pavel Emeliyanenko">
-  <meta property="og:description" content="We present a certified and complete algorithm to compute arrangements of real planar algebraic curves. It computes the decomposition of the plane induced by a finite number of algebraic curves in terms of a cylindrical algebraic decomposition. From a high-level perspective, the overall method splits into two main subroutines, namely an algorithm denoted Bisolve to isolate the real solutions of a zero-dimensional bivariate system, and an algorithm denoted GeoTop to compute the topology of a single algebraic curve. Compared to existing approaches based on elimination techniques, we considerably improve the corresponding lifting steps in both subroutines. As a result, generic position of the input system is never assumed, and thus our algorithm never demands for any change of coordinates. In addition, we significantly limit the types of symbolic operations involved, that is, we only use resultant and  computations as purely symbolic operations. The latter results are achieved by combining techniques from different fields such as (modular) symbolic computation, numerical analysis and algebraic geometry. We have implemented our algorithms as prototypical contributions to the C&#43;&#43;-project CGAL. We exploit graphics hardware to expedite the remaining symbolic computations. We have also compared our implementation with the current reference implementations, that is, LGP and Maple’s Isolate for polynomial system solving, and CGAL’s bivariate algebraic kernel for analyses and arrangement computations of algebraic curves. For various series of challenging instances, our exhaustive experiments show that the new implementations outperform the existing ones."><meta property="og:image" content="https://workasm.github.io/img/portrait.jpg">
+  <meta property="og:description" content="We present a certified and complete algorithm to compute arrangements of real planar algebraic curves. It computes the decomposition of the plane induced by a finite number of algebraic curves in terms of a cylindrical algebraic decomposition. From a high-level perspective, the overall method splits into two main subroutines, namely an algorithm denoted Bisolve to isolate the real solutions of a zero-dimensional bivariate system, and an algorithm denoted GeoTop to compute the topology of a single algebraic curve. Compared to existing approaches based on elimination techniques, we considerably improve the corresponding lifting steps in both subroutines. As a result, generic position of the input system is never assumed, and thus our algorithm never demands for any change of coordinates. In addition, we significantly limit the types of symbolic operations involved, that is, we only use resultant and  computations as purely symbolic operations. The latter results are achieved by combining techniques from different fields such as (modular) symbolic computation, numerical analysis and algebraic geometry. We have implemented our algorithms as prototypical contributions to the C&#43;&#43;-project CGAL. We exploit graphics hardware to expedite the remaining symbolic computations. We have also compared our implementation with the current reference implementations, that is, LGP and Maple’s Isolate for polynomial system solving, and CGAL’s bivariate algebraic kernel for analyses and arrangement computations of algebraic curves. For various series of challenging instances, our exhaustive experiments show that the new implementations outperform the existing ones."><meta property="og:image" content="https://workasm.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2013-06-07T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-10-19T18:38:08&#43;02:00">
+  <meta property="article:modified_time" content="2013-06-07T00:00:00&#43;00:00">
   
 
   
@@ -151,7 +175,8 @@
 
       <div id="search-box">
         
-        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
 
@@ -184,7 +209,7 @@
 
       
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         
 
         
@@ -245,13 +270,24 @@
         
 
       
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
 
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
         
 
         
 
         
-
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
         
 
       </ul>
@@ -288,40 +324,69 @@
   
     
 
+
+
+<meta content="2013-06-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2013-06-07 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
 <div class="article-metadata">
 
   
   
   
+  
   <div>
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Eric Berberich</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Pavel Emeliyanenko</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Alexander Kobel</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Michael Sagraloff</span>
-    </span>
     
-  </div>
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Alexander Kobel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
   
 
+
+
+  </div>
+  
+  
+
+  
   <span class="article-date">
     
-        Last updated on
     
-    <meta content="2013-06-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-10-19 18:38:08 &#43;0200 CEST" itemprop="dateModified">
-      Oct 19, 2018
-    </time>
+      
+    
+    <time>June 2013</time>
   </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Pavel Emeliyanenko">
-  </span>
+  
+
+  
 
   
 
@@ -334,7 +399,7 @@
   
 
   
-  
+    
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
@@ -404,9 +469,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1" href="/pdf/tcs_2013.pdf" target="_blank" rel="noopener">
@@ -441,7 +508,7 @@
   
   <a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1016/j.tcs.2013.04.014" target="_blank" rel="noopener">
     
-    View Journal Article
+    Journal Article
   </a>
 
 
@@ -467,6 +534,9 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
+            
+
+            
             
             <a href="/publication/#2">
               Journal article
@@ -494,20 +564,6 @@
     <div class="d-md-none space-below"></div>
     
 
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9" itemprop="datePublished">
-            June, 2013
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-sm-none space-below"></div>
-
     <div class="space-below"></div>
 
     <div class="article-style"></div>
@@ -518,7 +574,15 @@
 
 
 
+
+
+
   
+  
+    
+  
+  
+
 
 
 
@@ -536,7 +600,7 @@
   
 
   <p class="powered-by">
-    &copy; 2018 Pavel Emeliyanenko &middot; 
+    &copy; 2019 Pavel Emeliyanenko &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -594,9 +658,9 @@
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
       
@@ -647,24 +711,42 @@
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
     
-
     
     
     
     
     
+      
     
     
     
-    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
-
     
+    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
 
   </body>
 </html>

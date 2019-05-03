@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+  <meta name="generator" content="Hugo 0.55.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Pavel Emeliyanenko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A collection of rendered Duping Cyclide surfaces with algebraic arrangements">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/project/xsurface/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.66df1ac2dea8a057f880b4fd344da1e7.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-126733800-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://workasm.github.io/index.xml" type="application/rss+xml" title="Pavel Emeliyanenko">
+  <link rel="feed" href="https://workasm.github.io/index.xml" type="application/rss+xml" title="Pavel Emeliyanenko">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://workasm.github.io/project/xsurface/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Pavel Emeliyanenko">
+  <meta property="og:url" content="https://workasm.github.io/project/xsurface/">
+  <meta property="og:title" content="XSurface Dupin Cyclides | Pavel Emeliyanenko">
+  <meta property="og:description" content="A collection of rendered Duping Cyclide surfaces with algebraic arrangements"><meta property="og:image" content="https://workasm.github.io/img/cgal_logo.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-04-27T00:00:00&#43;02:00">
+  
+  <meta property="article:modified_time" content="2016-04-27T00:00:00&#43;02:00">
+  
+
+  
+
+  
+
+  <title>XSurface Dupin Cyclides | Pavel Emeliyanenko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Pavel Emeliyanenko</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+<div class="article-header">
+  
+  
+  <img src="/img/cgal_logo.png" class="article-banner" itemprop="image" alt="">
+  
+
+  
+</div>
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">XSurface Dupin Cyclides</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2016-04-27 00:00:00 &#43;0200 CEST" itemprop="datePublished">
+<meta content="2016-04-27 00:00:00 &#43;0200 CEST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Apr 27, 2016</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/project/xsurface/#disqus_thread"></a>
+  
+
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>This project presents a set of curves rendered on the surface of a Dupin Cyclide. It was done together with my colleges from the <a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity" target="_blank">Max-Planck Institute for Informatics</a>.
+My part was essentially the rendering of plane algebraic curces (based on my Masters&rsquo;s thesis) and OpenGL rendering of the surfaces. The rendered Dupin Cyclides looked so cool that they were printed in the MPII calendar
+and also became the logo of the Algorithm and Complexity group. See also the <a href="#publication-list">publication list</a> below.</p>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_1.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_1_hud885836181ce0bdbdf0bed98038e1ed2_3573692_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_10.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_10_huce2940fcb9a505ba04d8684edf4eb4b9_3127915_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_11.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_11_huaa3019527f6c0dba3ed2b2d0b5d34811_3222468_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_12.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_12_hu798f88d60387d1bcb5eaaca4adff61a9_3802558_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_13.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_13_hu92e1c604000073c5a4ac533e4ffc920e_3217074_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_14.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_14_hu7c0ec933d3d34635315ea0ace12f96a5_3262861_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_15.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_15_hu325de0a97a530188d663d67ad1bdc7d8_3416456_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_2.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_2_hud885836181ce0bdbdf0bed98038e1ed2_3573692_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_3.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_3_hu7413306b6e0fdcddd55764ee78eff0b5_3496986_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_4.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_4_hudd6421b0a188d2bba237abdb3aa8018e_3093345_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_5.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_5_hu615f8c9e358a29ae821196fb9fd52626_3469742_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_6.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_6_hue193302cf738c0aac39b30cf9384c314_3347776_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_7.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_7_hu5c3f9efa2f770bade3be710b0e76eca9_3354562_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_8.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_8_hu1c8625af3f45a664e8d23931c3fc2ca9_3091221_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-images" href="/project/xsurface/images/dupin_cyclide_9.png" >
+  <img src="/project/xsurface/images/dupin_cyclide_9_hu7ed572c27682f4bf08cd8d9b4c773104_3653177_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+
+  
+</div>
+
+<h3 id="publication-list">Publication list</h3>
+
+<ol>
+<li>A. Eigenwillig, M. Kerber: Exact and efficient 2D-arrangements of arbitrary algebraic curves. In: SODA 2008. <a href="https://dl.acm.org/citation.cfm?id=1347096" target="_blank">ACM</a></li>
+<li>A. Eigenwillig, M. Kerber, N. Wolpert: Fast and exact geometric analysis of real algebraic plane curves. In: ISSAC 2007. <a href="https://doi.org/10.1145/1277548.1277570" target="_blank">DOI</a></li>
+<li>K. Mehlhorn, A. Eigenwillig, L. Kettner, W. Krandick, S. Schmitt, N. Wolpert: A Descartes Algorithms for Polynomials with Bit-Stream Coefficients. In: Reliable Implementation of Real Number Algorithms, 2005. <a href="https://doi.org/10.1007/11555964_12" target="_blank">DOI</a></li>
+<li>E. Berberich, M. Kerber: Exact arrangements on tori and Dupin cyclides. In: SPM 2008. <a href="https://doi.org/10.1145/1364901.1364912" target="_blank">DOI</a></li>
+<li>E. Berberich, M. Kerber, M. Sagraloff: Exact geometric-topological analysis of algebraic surfaces. In: SCG 2008. <a href="https://doi.org/10.1145/1377676.1377703" target="_blank">DOI</a></li>
+<li>E. Berberich, M. Sagraloff: A generic and flexible framework for the geometrical and topological analysis of (algebraic) surfaces. In: SMP 2008. <a href="https://doi.org/10.1145/1364901.1364925" target="_blank">DOI</a></li>
+<li>E. Berberich: Robust and efficient software for problems in 2.5-dimensional non-linear geometry: algorithms and implementations. PhD Thesis, 2008. <a href="https://dx.doi.org/10.22028/D291-25937" target="_blank">DOI</a></li>
+<li>P. Emeliyanenko, E. Berberich, M. Sagraloff: Visualizing Arcs of Implicit Algebraic Curves, Exactly and Fast. In: ISCV 2009. <a href="https://doi.org/10.1007/978-3-642-10331-5_57" target="_blank">DOI</a></li>
+</ol>
+
+    </div>
+
+    
+
+    
+
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+  </div>
+</article>
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 Pavel Emeliyanenko &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//workasm.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+
+  </body>
+</html>
+

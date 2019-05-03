@@ -6,17 +6,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.2.0">
-  <meta name="generator" content="Hugo 0.52" />
-  <meta name="author" content="Pavel Emeliyanenko">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+  <meta name="generator" content="Hugo 0.55.2" />
+
+  
 
   
   
   
   
+  
+    
+    
     
   
-  <meta name="description" content="My personal and professional webpage">
+  
+
+  <meta name="author" content="Pavel Emeliyanenko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="C&#43;&#43; Software Engineer">
 
   
   <link rel="alternate" hreflang="en-us" href="https://workasm.github.io/">
@@ -61,7 +74,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -78,6 +92,16 @@
   
 
   <link rel="stylesheet" href="/styles.css">
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.66df1ac2dea8a057f880b4fd344da1e7.css">
   
 
   
@@ -121,10 +145,10 @@
   <meta property="og:site_name" content="Pavel Emeliyanenko">
   <meta property="og:url" content="https://workasm.github.io/">
   <meta property="og:title" content="Pavel Emeliyanenko">
-  <meta property="og:description" content="My personal and professional webpage"><meta property="og:image" content="https://workasm.github.io/img/portrait.jpg">
+  <meta property="og:description" content="C&#43;&#43; Software Engineer"><meta property="og:image" content="https://workasm.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-10-15T00:00:00&#43;02:00">
+  <meta property="og:updated_time" content="2016-04-27T00:00:00&#43;02:00">
   
 
   
@@ -150,7 +174,8 @@
 
       <div id="search-box">
         
-        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
 
@@ -183,7 +208,7 @@
 
       
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         
 
         
@@ -244,13 +269,24 @@
         
 
       
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
 
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
         
 
         
 
         
-
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
         
 
       </ul>
@@ -261,7 +297,9 @@
 
 
 
-<span id="homepage" style="display: none"></span>
+<span id="homepage" class="d-none"></span>
+
+
 
 
   
@@ -270,12 +308,45 @@
 
 
 
+
+
   
   
   
-  <section id="about" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="about" class="home-section wg-about   " >
     <div class="container">
       
+
+
+
+
+  
+
+
+
+
+
+
 
 
 
@@ -284,15 +355,13 @@
     <div id="profile">
 
       
-      <img class="portrait" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
+      
+      <img class="portrait" src="/author/admin/avatar_hu71e37597fdcab46794cc4e21b8ff4a39_124909_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
       
 
       <div class="portrait-title">
         <h2 itemprop="name">Pavel Emeliyanenko</h2>
-        <h3 itemprop="jobTitle">Software Engineer</h3>
-
-        
-        
+        <h3 itemprop="jobTitle">C&#43;&#43; Software Engineer</h3>
 
         
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
@@ -309,7 +378,7 @@
         
       </div>
 
-      <link itemprop="url" href="https://workasm.github.io/">
+      <link itemprop="url" href="">
 
       <ul class="network-icon" aria-hidden="true">
         
@@ -369,10 +438,9 @@
   <div class="col-12 col-lg-8" itemprop="description">
 
     
+    <h1>Biography</h1>
 
-<h1 id="biography">Biography</h1>
-
-<p>I am a C++ Software Engineer at Precitec Optronik GmbH, Germany. My prime interests are C++ algorithms engineering, optimization and parallelization techniques. During my professional career I was involved in software projects from different areas including computational geometry, computer graphics, embedded navigation and routing, network traffic optimization and video streaming, image processing.</p>
+    <p>I am a C++ Software Engineer at Precitec Optronik GmbH, Germany. My prime interests are C++ algorithms engineering, optimization and parallelization techniques. During my professional career I was involved in software projects from different areas including computational geometry, computer graphics, embedded navigation and routing, network traffic optimization and video streaming, image processing.</p>
 
 <p>Currently I work in EyeTracker project: real-time tracking a human eye position in 6 dimensions (3D position + 3D rotation) used for laser refractive eye surgery.</p>
 
@@ -444,7 +512,27 @@
   
   
   
-  <section id="experience" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="experience" class="home-section wg-experience   " >
     <div class="container">
       
 
@@ -480,19 +568,18 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <div class="float-right text-muted exp-meta">
-              <div>
-                February 2016 –
-                
-                  Present
-                
-                
-              </div>
-              <div class="text-right">Neu Isenburg, Germany</div>
-              
-            </div>
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Software Engineer <img src="/img/precitec2.png" alt="" /></h4>
             <h4 class="card-title exp-company text-muted my-0"><a href="https://www.precitec.de/" target="_blank" rel="noopener">Precitec Optronik GmbH</a></h4>
+            <div class="text-muted exp-meta">
+              Feb 2016 –
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>Neu Isenburg, Germany</span>
+              
+            </div>
             <div class="card-text">Responsibilities include:</p>
 
 <ul>
@@ -500,8 +587,7 @@
 <li>C++ software engineering</li>
 <li>algorithms parallelization and optimization for target platform
 <br /></li>
-</ul>
-</div>
+</ul></div>
           </div>
         </div>
       </div>
@@ -526,19 +612,18 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <div class="float-right text-muted exp-meta">
-              <div>
-                April 2014 –
-                
-                  November 2015
-                
-                
-              </div>
-              <div class="text-right">Langenfeld, Germany</div>
-              
-            </div>
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Embedded Software Engineer</h4>
             <h4 class="card-title exp-company text-muted my-0"><a href="https://www.balter.de/" target="_blank" rel="noopener">Balter Security GmbH</a></h4>
+            <div class="text-muted exp-meta">
+              Apr 2014 –
+              
+                Nov 2015
+              
+              
+                <span class="middot-divider"></span>
+                <span>Langenfeld, Germany</span>
+              
+            </div>
             <div class="card-text">Developing firmware for IP Network Cameras, ARM, Linux</div>
           </div>
         </div>
@@ -564,20 +649,19 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <div class="float-right text-muted exp-meta">
-              <div>
-                March 2014 –
-                
-                  October 2012
-                
-                
-              </div>
-              <div class="text-right">Munich, Germany</div>
-              
-            </div>
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Embedded Software Engineer <img src="/img/EB.png" alt="" /></h4>
             <h4 class="card-title exp-company text-muted my-0"><a href="https://www.elektrobit.com/" target="_blank" rel="noopener">Elektrobit Automotive GmbH</a></h4>
-            <div class="card-text">Developing navigation (routing) algorithms for on-board car navigation system</div>
+            <div class="text-muted exp-meta">
+              Mar 2014 –
+              
+                Oct 2012
+              
+              
+                <span class="middot-divider"></span>
+                <span>Munich, Germany</span>
+              
+            </div>
+            
           </div>
         </div>
       </div>
@@ -594,9 +678,32 @@
   
   
   
-  <section id="projects" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="projects" class="home-section wg-portfolio   " >
     <div class="container">
       
+
+
+
 
 
 
@@ -619,7 +726,7 @@
 
     
 
-    <div class="row  js-layout-row ">
+    <div class=" row js-layout-row ">
       
         
         
@@ -635,10 +742,32 @@
   <i class="far fa-copy pub-icon" aria-hidden="true"></i>
 
   <span class="project-title">
-    <a href="/project/poly_parser/"  itemprop="url">CGAL&#39;s Polynomial Parser</a>
+    <a href="/project/poly_parser/"  itemprop="url">CGAL&rsquo;s Polynomial Parser</a>
   </span>
 
   <p class="project-summary">Multivariate polynomial parser for CGAL library</p>
+</div>
+
+        
+      
+        
+        
+        
+        
+          
+
+
+
+
+
+<div class="col-lg-12 project-item isotope-item " itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-copy pub-icon" aria-hidden="true"></i>
+
+  <span class="project-title">
+    <a href="/project/xsurface/"  itemprop="url">XSurface Dupin Cyclides</a>
+  </span>
+
+  <p class="project-summary">A collection of rendered Duping Cyclide surfaces with algebraic arrangements</p>
 </div>
 
         
@@ -655,39 +784,34 @@
   
   
   
-  <section id="publications" class="home-section">
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="publications" class="home-section wg-pages   " style="background-color: navy;background-image: linear-gradient(AliceBlue, LightYellow);">
     <div class="container">
       
 
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Publications</h1>
-    
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-      
-    
-
-    
-
-    
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Yair Altman</span>.
-  <a href="/publication/2015-matlab/" itemprop="name">Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization)</a>.
-  CRC Press,
-  2015.
-  <p>
 
 
 
@@ -696,6 +820,87 @@
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Publications</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Yair Altman</a></span></span>
+  
+
+
+
+  </span>
+  (2015).
+  <a href="/publication/2015-matlab/" itemprop="name">Accelerating MATLAB Performance: 1001 tips to speed up MATLAB programs (Chapters 6 and 7: explicit parallelization)</a>.
+  CRC Press.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
 
 
 
@@ -730,6 +935,9 @@
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -737,11 +945,52 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Eric Berberich, Pavel Emeliyanenko, Alexander Kobel, Michael Sagraloff</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Alexander Kobel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
+  
+
+
+
+  </span>
+  (2013).
   <a href="/publication/2013-tcs/" itemprop="name">Exact symbolic–numeric computation of planar algebraic curves</a>.
-  Theoretical Computer Science,
-  2013.
+  Theoretical Computer Science.
+  
   <p>
 
 
@@ -750,9 +999,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/tcs_2013.pdf" target="_blank" rel="noopener">
@@ -787,10 +1038,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1016/j.tcs.2013.04.014" target="_blank" rel="noopener">
     
-    View Journal Article
+    Journal Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -798,11 +1052,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2012).
   <a href="/publication/2012-phd/" itemprop="name">Harnessing the power of GPUs for problems in real algebraic geometry</a>.
-  PhD thesis,
-  2012.
+  PhD thesis.
+  
   <p>
 
 
@@ -811,9 +1085,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/phd_thesis_2012.pdf" target="_blank" rel="noopener">
@@ -852,6 +1128,9 @@
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -859,11 +1138,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2012).
   <a href="/publication/2012-jpdc/" itemprop="name">Computing resultants on Graphics Processing Units: Towards GPU-accelerated computer algebra</a>.
-  JPDC,
-  2012.
+  JPDC.
+  
   <p>
 
 
@@ -872,9 +1171,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/gpu_res_2012.pdf" target="_blank" rel="noopener">
@@ -909,10 +1210,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.sciencedirect.com/science/article/pii/S0743731512001761" target="_blank" rel="noopener">
     
-    View Journal Article
+    Journal Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -920,11 +1224,38 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko, Michael Sagraloff</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
+  
+
+
+
+  </span>
+  (2012).
   <a href="/publication/2012-issac/" itemprop="name">On the complexity of solving a bivariate polynomial system</a>.
-  In ISSAC,
-  2012.
+  In ISSAC.
+  
   <p>
 
 
@@ -933,9 +1264,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/bisolve_complexity.pdf" target="_blank" rel="noopener">
@@ -970,10 +1303,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?id=2442854" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -981,11 +1317,52 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Eric Berberich, Pavel Emeliyanenko, Alexander Kobel, Michael Sagraloff</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Alexander Kobel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
+  
+
+
+
+  </span>
+  (2011).
   <a href="/publication/2011-snc/" itemprop="name">Arrangement computation for planar algebraic curves</a>.
-  In SNC,
-  2011.
+  In SNC.
+  
   <p>
 
 
@@ -994,9 +1371,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/snc_2011.pdf" target="_blank" rel="noopener">
@@ -1031,10 +1410,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dl.acm.org/citation.cfm?doid=2331684.2331698" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1042,11 +1424,45 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Eric Berberich, Pavel Emeliyanenko, Michael Sagraloff</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
+  
+
+
+
+  </span>
+  (2011).
   <a href="/publication/2011-alenex/" itemprop="name">An Elimination Method for Solving Bivariate Polynomial Systems: Eliminating the Usual Drawbacks</a>.
-  In ALENEX,
-  2011.
+  In ALENEX.
+  
   <p>
 
 
@@ -1055,9 +1471,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Bisolve.pdf" target="_blank" rel="noopener">
@@ -1092,10 +1510,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?id=2790252" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1103,11 +1524,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2010).
   <a href="/publication/2010-pasco/" itemprop="name">A complete modular resultant algorithm targeted for realization on graphics hardware</a>.
-  In PASCO,
-  2010.
+  In PASCO.
+  
   <p>
 
 
@@ -1116,9 +1557,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/pasco_2010.pdf" target="_blank" rel="noopener">
@@ -1153,10 +1596,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?id=1837219" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1164,11 +1610,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2010).
   <a href="/publication/2010-ica3pp/" itemprop="name">Modular resultant algorithm for graphics processors</a>.
-  In ICA3PP,
-  2010.
+  In ICA3PP.
+  
   <p>
 
 
@@ -1177,9 +1643,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/ica3pp_2010.pdf" target="_blank" rel="noopener">
@@ -1214,10 +1682,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1007/978-3-642-13119-6_37" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1225,11 +1696,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2010).
   <a href="/publication/2010-gtc/" itemprop="name">Accelerating symbolic computations on NVIDIA Fermi</a>.
-  In GTC (Poster),
-  2010.
+  In GTC (Poster).
+  
   <p>
 
 
@@ -1238,7 +1729,9 @@
 
 
 
+
   
+
 
 
 
@@ -1277,10 +1770,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://on-demand.gputechconf.com/gtc/2010/posters/A02-%20Accelerating-Symbolic-Computations-on-NVIDIA-Fermi.pdf" target="_blank" rel="noopener">
     
-    View Conference Poster
+    Conference Poster
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1288,11 +1784,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2009).
   <a href="/publication/2009-appt/" itemprop="name">Efficient multiplication of polynomials on graphics hardware</a>.
-  In APPT,
-  2009.
+  In APPT.
+  
   <p>
 
 
@@ -1301,9 +1817,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/poly_mul_2009.pdf" target="_blank" rel="noopener">
@@ -1338,10 +1856,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1007/978-3-642-03644-6_11" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1349,11 +1870,45 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko, Eric Berberich, Michael Sagraloff</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Sagraloff</a></span></span>
+  
+
+
+
+  </span>
+  (2009).
   <a href="/publication/2009-isvc/" itemprop="name">Visualizing Arcs of Implicit Algebraic Curves, Exactly and Fast</a>.
-  In ISVC,
-  2009.
+  In ISVC.
+  
   <p>
 
 
@@ -1362,9 +1917,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/isvc_2009.pdf" target="_blank" rel="noopener">
@@ -1407,10 +1964,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1007/978-3-642-10331-5_57" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1418,11 +1978,38 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko, Michael Kerber</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Kerber</a></span></span>
+  
+
+
+
+  </span>
+  (2008).
   <a href="/publication/2008-webapp/" itemprop="name">Visualizing and exploring planar algebraic arrangements: a web application</a>.
-  In SoCG,
-  2008.
+  In SoCG.
+  
   <p>
 
 
@@ -1431,9 +2018,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/ek-vaepaa-08.pdf" target="_blank" rel="noopener">
@@ -1480,10 +2069,13 @@
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1145/1377676.1377714" target="_blank" rel="noopener">
     
-    View Conference Article
+    Conference Article
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1491,11 +2083,38 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Eric Berberich, Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Eric Berberich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2008).
   <a href="/publication/2008-cgal_ckva/" itemprop="name">CGAL&#39;s Curved Kernel via Analysis</a>.
-  Technical Report: ACS-TR-123203-04 (Algorithms for Complex Shapes),
-  2008.
+  Technical Report: ACS-TR-123203-04 (Algorithms for Complex Shapes).
+  
   <p>
 
 
@@ -1504,9 +2123,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/CKvA2008.pdf" target="_blank" rel="noopener">
@@ -1537,6 +2158,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1544,11 +2168,38 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko, Michael Kerber</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Michael Kerber</a></span></span>
+  
+
+
+
+  </span>
+  (2008).
   <a href="/publication/2008-cgal_akd/" itemprop="name">An implementation for the 2D Algebraic Kernel</a>.
-  Technical Report: ACS-TR-363602-01 (Algorithms for Complex Shapes),
-  2008.
+  Technical Report: ACS-TR-363602-01 (Algorithms for Complex Shapes).
+  
   <p>
 
 
@@ -1557,9 +2208,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/ACS-TR-363602-01.pdf" target="_blank" rel="noopener">
@@ -1590,6 +2243,9 @@
 
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1597,11 +2253,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2007).
   <a href="/publication/2007-msc/" itemprop="name">Visualization of Points and Segments of Real Algebraic Plane Curves</a>.
-  Master&rsquo;s thesis,
-  2007.
+  Master&rsquo;s thesis.
+  
   <p>
 
 
@@ -1610,9 +2286,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/msc_thesis_2007.pdf" target="_blank" rel="noopener">
@@ -1659,6 +2337,9 @@
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
@@ -1666,11 +2347,31 @@
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Pavel Emeliyanenko</span>.
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="">Pavel Emeliyanenko</a></span></span>
+  
+
+
+
+  </span>
+  (2005).
   <a href="/publication/2005-bsc/" itemprop="name">Automatic verification of conditions for absence of interrupts</a>.
-  Bachelor&rsquo;s thesis,
-  2005.
+  Bachelor&rsquo;s thesis.
+  
   <p>
 
 
@@ -1679,9 +2380,11 @@
 
 
 
+
   
     
   
+
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/bsc_thesis_2005.pdf" target="_blank" rel="noopener">
@@ -1720,69 +2423,13 @@
   </a>
 
 </p>
+
+  
+  
 </div>
 
       
     
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    <ul class="fa-ul" itemscope>
-
-      
-      <li>
-        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:@gmail.com">@gmail.com</a></span>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Neu Isenburg, Germany</span>
-      </li>
-      
-
-      
-
-      
-
-    </ul>
 
     
 
@@ -1792,7 +2439,6 @@
     </div>
   </section>
   
-
 
 
 <div class="container">
@@ -1800,7 +2446,7 @@
   
 
   <p class="powered-by">
-    &copy; 2018 Pavel Emeliyanenko &middot; 
+    &copy; 2019 Pavel Emeliyanenko &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1855,9 +2501,9 @@
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
       
@@ -1906,24 +2552,42 @@
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
     
-
     
     
     
     
     
+      
     
     
     
-    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
-
     
+    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
 
   </body>
 </html>
